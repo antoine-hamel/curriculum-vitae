@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<meta name="theme-color" content="#99949E"/>
+	<meta name="msapplication-navbutton-color" content="#99949E"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="#99949E"/>
+
+	<title>Antoine Hamel | CV</title>
+	<meta name="author" content="Curriculum Vitae - Hamel"/>
+	<link rel="shortcut icon" type="image/jpg" href="https://lh3.googleusercontent.com/TTmu65_GGQjlWnKrpLEyUJVWClBdBpdqSW9iOSn_HQBUGyTu06TCMnOmzS0uoe6I50vtugO7_eUYyQHlOyhy5AQUCYqBXMA-kE5A9NdEyTm-YGwj9m0y-THAGlOqsB3K7cE9nbcqcQ=w2400"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+
+	<style>
+		* {
+			outline: none;
+			outline-color: transparent;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+			-webkit-touch-callout: none;
+			-webkit-user-drag: none;
+			user-drag: none;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			/*font-family: 'Roboto', sans-serif;*/
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+		}
+   /* *:not(input):not(select) {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      }*/
+      html, body {
+      	margin: 0; padding: 0;
+      	width: 100%; height: 100%;
+      	overflow-y: auto;
+      	scrollbar-width: none;
+      	-ms-overflow-style: none;
+      	background-color: rgba(207, 216, 215, .41);
+      	scroll-behavior: smooth;
+      }
+      html {
+      	background-image: url(https://source.unsplash.com/vS3idIiYxX0/);
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      	background-position: center top;
+      }
+      html::-webkit-scrollbar, body::-webkit-scrollbar {
+      	width: 0; height: 0;
+      	display: none;
+      }
+      a {
+      	text-decoration: none;
+      	color: inherit;
+      }
+      h1, h2 {
+      	text-transform: uppercase;
+      }
+      h1, h2, h3, h4, h5, h6 {
+      	margin: .25em 0;
+      }
+      ul {
+      	list-style: circle;
+      	padding-left: 2em;
+      }
+      .bold {
+      	font-weight: 700;
+      }
+      .thin {
+      	font-weight: 100;
+      }
+      #header {
+      	background-color: #2c414c; color: white;
+      	display: flex;
+      	position: fixed;
+      	width: 100%;
+      	align-items: flex-end;
+      	justify-content: space-between;
+      	margin-bottom: 1.75em;
+         z-index: 3;
+      }
+      #logo {
+      	display: inline-flex;
+      	align-items: center;
+      	justify-content: center;
+      	padding: .75em 1em;
+      }
+      #logo span {
+      	padding: 0 .75em;
+      }
+      #logo #avatar {
+      	width: 3em; height: 3em;
+      	border-radius: 50%;
+      	overflow: hidden;
+      	position: relative;
+      }
+      #logo #avatar img {
+      	width: auto; height: auto; max-height: 100%;
+      	min-width: 100%; min-height: 100%;
+      	position: absolute;
+      	top: 50%; left: 50%; bottom: auto; right: auto;
+      	transform: translate(-50%, -50%);
+      	z-index: 1;
+      }
+      #logo #avatar #linkedin {
+      	opacity: 0;
+      	position: absolute;
+      	width: 100%; height: 100%;
+      	top: 0; left: 0; bottom: 0; right: 0;
+      	background-color: rgba(0,0,0,.5); 
+      	color: white;
+      	z-index: 2;
+      	text-align: center;
+      	line-height: 3em;
+      	transition: all .3s ease;
+      }
+      #logo #avatar:hover #linkedin {
+      	opacity: 1;
+      }
+      #coordinates {
+      	display: inline-grid;
+      }
+      #menu {
+      	display: inline-block;
+      	text-align: center;
+      	padding: 0 .5em;
+      	text-transform: uppercase;
+      }
+      .button_menu {
+      	border-bottom: .3em solid transparent;
+      	display: inline-block;
+      	padding: 1em .75em;
+      	font-size: 90%;
+      	transition: all .3s ease;
+      }
+      .button_menu:hover {
+      	border-bottom-color: #ffffff;
+      }
+      .section {
+      	width: 100%; height: 100%;
+      	padding-top: 5em;
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      	flex-direction: column;
+      }
+      #presentation, #formation, #competences {
+      	background-color: rgba(255, 255, 255, .3);
+      }
+      .title {
+      	text-transform: uppercase;
+      	padding: 1em;
+      	border-color: #2c414c;
+      	font-weight: 700;
+      	color: #2c414c;
+      	border-bottom: solid;
+      }
+      #presentation .information {
+      	font-style: italic;
+      }
+      .information {
+      	padding: 2em 5em;
+      	margin: 2em 3em;
+      	background-color: rgba(255, 255, 255, .75);
+      	position: relative;
+      }
+    /*.info-text {
+    	position: relative;
+    	}*/
+    	.information::before {
+    		border-top: .05em solid #2c414c;
+    		border-bottom: .05em solid #2c414c;
+    /*-webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);*/
+    transform: scaleX(0);
+    transition: all .3s ease;
+}
+.information::after {
+	border-left: .05em solid #2c414c;
+	border-right: .05em solid #2c414c;
+   /* -webkit-transform: scaleY(0);
+   -ms-transform: scaleY(0);*/
+   transform: scaleY(0);
+   transition: all .5s ease;
+}
+.information::before, .information::after {
+	content: '';
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	bottom: .5em;
+	right: .5em;
+}
+.information:hover::before {
+   /* -webkit-transform: scaleX(1);
+   -ms-transform: scaleX(1);*/
+   transform: scaleX(1);
+}
+.information:hover::after {
+   /* -webkit-transform: scaleY(1);
+   -ms-transform: scaleY(1);*/
+   transform: scaleY(1);
+}
+.job_where {
+   color: darkgrey;
+}
+.icon {
+	font-size: 2em;
+	color: #2c414c;
+	padding: .25em;
+	transition: all .3s ease;
+}
+.icon:hover {
+	color: white;
+}
+#footer {
+	padding: .5em;
+	font-size: 100%; line-height: 1.25em;
+	text-align: center;
+	color: white; background-color: #3C5864;
+	position: fixed;
+	bottom: 0; left: 0; right: 0; top: auto;
+}
+#footer span {
+	padding: 0 .5em;
+	display: inline-block;
+}
+@media screen and (max-width: 720px){
+	#header {
+		flex-direction: column;
+	}
+	#header > div {
+		width: 100%;
+	}
+	.button_menu {
+		width: 100%;
+		padding: .5em .75em .25em;
+	}
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<div id="avatar">
+				<img src="https://lh3.googleusercontent.com/TTmu65_GGQjlWnKrpLEyUJVWClBdBpdqSW9iOSn_HQBUGyTu06TCMnOmzS0uoe6I50vtugO7_eUYyQHlOyhy5AQUCYqBXMA-kE5A9NdEyTm-YGwj9m0y-THAGlOqsB3K7cE9nbcqcQ=w2400" title="" alt="Antoine Hamel"/>
+				<a href="https://www.linkedin.com/in/antoine-hamel/" target="_blank"><div id="linkedin"><i class="fab fa-linkedin fa-fw"></i></div></a>
+			</div>
+			<div id="coordinates">
+				<span class="bold">Antoine&nbsp;Hamel</span>
+			</div>
+		</div>
+		<div id="menu">
+			<a href="#experience" target="_self"><div class="button_menu">Expérience</div></a>
+			<a href="#formation" target="_self"><div class="button_menu">Formation</div></a>
+			<a href="#certifications" target="_self"><div class="button_menu">Certifications</div></a>
+			<a href="#competences" target="_self"><div class="button_menu">Compétences</div></a>
+		</div>
+	</div>
+	<div id="presentation" class="section">
+		<div class="title">
+			Qui suis-je ?
+		</div>
+		<div class="information">
+			Fraîchement diplômé en <span class="bold">Relations internationales</span>, je suis à la recherche d'un premier poste qui me permettra de faire mes preuves et de mettre mes compétences en <span class="bold">analyse</span> et <span class="bold">coordination</span> à profit. 
+		</div>
+		<div class="icon"><a href="#experience" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+		</div>
+	</div>
+	<div id="experience" class="section">
+		<div class="title">
+			Expérience professionnelle
+		</div>
+		<div class="information">
+			<div class="job">
+				<h3 class="bold">Participant à ULB Simulation</h3>
+				<h4 class="job_where">Simulation des Nations Unies à l'ULB | 2016</h4>
+				<ul class="job_what">
+					<li>Rédaction et défense publique de position papers</li>
+					<li>Capacité de prise de parole et d'analyse autonome du droit et des comportements diplomatiques</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h3 class="bold">Startupper</h3>
+				<h4 class="job_where">Solvay Start Academy | septembre à novembre 2017</h4>
+				<ul class="job_what">
+					<li>Développement d'une start-up</li>
+					<li>Conception d'un business model et d'une étude de marché</li>
+					<li>Compétences organisationnelles et entrepreneuriales</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h3 class="bold">Attaché de presse (stagiaire)</h3>
+				<h4 class="job_where">Infinités (agence de communication) | Entre juin 2014 et août 2016 - étés</h4>
+				<ul class="job_what">
+					<li>Communication et relations médias</li>
+					<li>Rédaction de communiqués de presse</li>
+					<li>Veille économique</li>
+				</ul>
+			</div>
+		</div>
+      <div class="icon"><a href="#formation" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+   </div>
+	</div>
+	
+</div>
+<div id="formation" class="section">
+	<div class="title">
+		Formation
+	</div>
+	<div class="information">
+		<div class="job">
+            <h3 class="bold">Master en Relations internationales</h3>
+            <h3>Finalité sécurité, paix et conflit</h3>
+            <h4 class="job_where">Université Libre de Bruxelles (Belgique) | 2016 à 2020</h4>
+            <span>Mention distinction</span>
+         </div>
+	</div>
+	<div class="icon"><a href="#certifications" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+	</div>
+</div>
+<div id="certifications" class="section">
+	<div class="title">
+		Certifications
+	</div>
+	<div class="information">
+		Voici du texte explicatif qui racontera beaucoup de choses très intéressantes bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou !
+	</div>
+	<div class="icon"><a href="#competences" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+	</div>
+</div>
+<div id="competences" class="section">
+	<div class="title">
+		Compétences
+	</div>
+	<div class="information">
+		Voici du texte explicatif qui racontera beaucoup de choses très intéressantes bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou !
+	</div>
+	<span>Back to top</span>
+	<div class="icon"><a href="#presentation" target="_self"><i class="fas fa-arrow-circle-up"></i></a>
+   <!--    <div class="icon"><a href="#experience" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+   </div> -->
+</div>
+<!-- Footer -->
+<div id="footer">
+	<span><i class="fas fa-phone-alt fa-fw"></i>&nbsp;<a href="tel:+32460971927" target="_self">+32&nbsp;460&nbsp;97&nbsp;19&nbsp;27</a></span>
+	<span><i class="fas fa-map-marker-alt fa-fw"></i>&nbsp;<a href="https://www.google.com/maps/place/Rue+des+Chevaliers/@50.8362394,4.3574566,17z/" target="_blank">6&nbsp;rue&nbsp;des&nbsp;Chevaliers, 1050&nbsp;Ixelles</a></span>
+	<span><i class="fas fa-envelope fa-fw"></i>&nbsp;<a href="mailto:antoinehamel.heud@gmail.com" target="_self">antoinehamel.heud@gmail.com</a></span>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
