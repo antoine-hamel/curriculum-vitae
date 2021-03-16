@@ -68,6 +68,7 @@
       }
       h1, h2, h3, h4, h5, h6 {
       	margin: .25em 0;
+      	transition: all .3s ease;
       }
       ul {
       	list-style: circle;
@@ -87,7 +88,7 @@
       	align-items: flex-end;
       	justify-content: space-between;
       	margin-bottom: 1.75em;
-         z-index: 3;
+      	z-index: 3;
       }
       #logo {
       	display: inline-flex;
@@ -154,7 +155,7 @@
       	justify-content: center;
       	flex-direction: column;
       }
-      #presentation, #formation, #competences {
+      #presentation, #formation, #languages {
       	background-color: rgba(255, 255, 255, .3);
       }
       .title {
@@ -165,15 +166,15 @@
       	color: #2c414c;
       	border-bottom: solid;
       }
-      #presentation .information {
+     /* #presentation .information {
       	font-style: italic;
-      }
-      .information {
-      	padding: 2em 5em;
-      	margin: 2em 3em;
-      	background-color: rgba(255, 255, 255, .75);
-      	position: relative;
-      }
+      	}*/
+      	.information {
+      		padding: 2em 5em;
+      		margin: 2em 7em;
+      		background-color: rgba(255, 255, 255, .75);
+      		position: relative;
+      	}
     /*.info-text {
     	position: relative;
     	}*/
@@ -183,7 +184,7 @@
     /*-webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);*/
     transform: scaleX(0);
-    transition: all .3s ease;
+    transition: all .7s ease;
 }
 .information::after {
 	border-left: .05em solid #2c414c;
@@ -191,7 +192,7 @@
    /* -webkit-transform: scaleY(0);
    -ms-transform: scaleY(0);*/
    transform: scaleY(0);
-   transition: all .5s ease;
+   transition: all .9s ease;
 }
 .information::before, .information::after {
 	content: '';
@@ -212,16 +213,37 @@
    transform: scaleY(1);
 }
 .job_where {
-   color: darkgrey;
+	color: darkgrey;
+}
+.colored_dots {
+	color: #3C5864;
+	transition: all .3s ease;
+}
+.colored_dots:hover {
+	color: #d83e4e;
 }
 .icon {
 	font-size: 2em;
 	color: #2c414c;
 	padding: .25em;
+	margin-bottom: 1em;
 	transition: all .3s ease;
 }
 .icon:hover {
 	color: white;
+}
+
+.job:hover .icon_small {
+	color: #2c414c;
+}
+.icon_small {
+	font-size: 1.5em;
+	color: #3C5864;
+	padding: .25em .75em;
+	transition: all .3s ease;
+}
+.icon_small:hover {
+	color: #2c414c;
 }
 #footer {
 	padding: .5em;
@@ -246,6 +268,9 @@
 		width: 100%;
 		padding: .5em .75em .25em;
 	}
+	.information {
+		margin: 2em 5em;
+	}
 }
 
 </style>
@@ -264,16 +289,16 @@
 		<div id="menu">
 			<a href="#experience" target="_self"><div class="button_menu">Expérience</div></a>
 			<a href="#formation" target="_self"><div class="button_menu">Formation</div></a>
-			<a href="#certifications" target="_self"><div class="button_menu">Certifications</div></a>
-			<a href="#competences" target="_self"><div class="button_menu">Compétences</div></a>
+			<a href="#aptitudes" target="_self"><div class="button_menu">Aptitudes</div></a>
+			<a href="#languages" target="_self"><div class="button_menu">Langues</div></a>
 		</div>
 	</div>
 	<div id="presentation" class="section">
 		<div class="title">
 			Qui suis-je ?
 		</div>
-		<div class="information">
-			Fraîchement diplômé en <span class="bold">Relations internationales</span>, je suis à la recherche d'un premier emploi qui me permettra de faire mes preuves et de mettre mes compétences en <span class="bold">analyse</span> et <span class="bold">coordination</span> à profit. 
+		<div class="information" style="line-height: 1.5em">
+			Après un Master II en Sciences Politiques au Canada et à Bruxelles pour me former in vivo aux <span class="bold">enjeux  internationaux et multiculturels</span>, je souhaiterais prolonger cette trajectoire vers un emploi de <span class="bold">Chargé de projets</span>, que je pourrais assumer efficacement en équipe.
 		</div>
 		<div class="icon"><a href="#experience" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
 		</div>
@@ -283,6 +308,14 @@
 			Expérience professionnelle
 		</div>
 		<div class="information">
+			<div class="job">
+				<h3 class="bold">Rédacteur politique - rubrique internationale</h3>
+				<h4 class="job_where">Médiavenir | depuis octobre 2020</h4>
+				<ul class="job_what">
+					<li>Rédaction d'articles politiques</li>
+					<li>Expertise politique des élections américaines et des projections géostratégiques</li>
+				</ul>
+			</div>
 			<div class="job">
 				<h3 class="bold">Participant à ULB Simulation</h3>
 				<h4 class="job_where">Simulation des Nations Unies à l'ULB | 2016</h4>
@@ -302,7 +335,7 @@
 			</div>
 			<div class="job">
 				<h3 class="bold">Attaché de presse (stagiaire)</h3>
-				<h4 class="job_where">Infinités (agence de communication) | Entre juin 2014 et août 2016 - étés</h4>
+				<h4 class="job_where">Infinités (agence de communication) | entre juin 2014 et août 2016 - étés</h4>
 				<ul class="job_what">
 					<li>Communication et relations médias</li>
 					<li>Rédaction de communiqués de presse</li>
@@ -310,8 +343,8 @@
 				</ul>
 			</div>
 		</div>
-      <div class="icon"><a href="#formation" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
-   </div>
+		<div class="icon"><a href="#formation" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+		</div>
 	</div>
 	
 </div>
@@ -320,35 +353,62 @@
 		Formation
 	</div>
 	<div class="information">
+		<div class="job" style="padding:1em">
+			<h3 class="bold">Master en Relations internationales</h3>
+			<h3>Finalité sécurité, paix et conflit</h3>
+			<h4 class="job_where">Université Libre de Bruxelles (Belgique) | 2016 à 2020</h4>
+			<span>Mention distinction</span>
+		</div>
+		<div class="job" style="padding:1em">
+			<h3 class="bold">Bachelier en Sciences politiques</h3>
+			<h3>Finalité Relations internationales</h3>
+			<h4 class="job_where">Université du Québec à Montréal (Canada) | 2012 à 2016</h4>
+		</div>
+	</div>
+	<div class="icon"><a href="#aptitudes" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+	</div>
+</div>
+
+<div id="aptitudes" class="section">
+	<div class="title">
+		Aptitudes
+	</div>
+	<div class="information">
 		<div class="job">
-            <h3 class="bold">Master en Relations internationales</h3>
-            <h3>Finalité sécurité, paix et conflit</h3>
-            <h4 class="job_where">Université Libre de Bruxelles (Belgique) | 2016 à 2020</h4>
-            <span>Mention distinction</span>
-         </div>
+			<h3><i class="fas fa-pen-nib icon_small"></i>Excellentes capacités rédactionnelles et communicationnelles</h3>
+			<h3><i class="fas fa-chart-bar icon_small"></i>Esprit critique et capacités d'analyse pluridisciplinaire</h3>
+			<h3><i class="fas fa-globe icon_small"></i>Expertise en géopolitique et politique extérieure</h3>
+			<h3><i class="fas fa-university icon_small"></i>Recherche académique et scientifique</h3>
+			<h3><i class="fas fa-bullhorn icon_small"></i>Relations publiques</h3>
+			<h3><i class="fab fa-microsoft icon_small"></i>Excellente maîtrise de la suite Office</h3>
 	</div>
-	<div class="icon"><a href="#certifications" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
 	</div>
-</div>
-<div id="certifications" class="section">
-	<div class="title">
-		Certifications
-	</div>
-	<div class="information">
-		Voici du texte explicatif qui racontera beaucoup de choses très intéressantes bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou !
-	</div>
-	<div class="icon"><a href="#competences" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
+	<div class="icon"><a href="#languages" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
 	</div>
 </div>
-<div id="competences" class="section">
+<div id="languages" class="section">
 	<div class="title">
-		Compétences
+		Je parle…
 	</div>
 	<div class="information">
-		Voici du texte explicatif qui racontera beaucoup de choses très intéressantes bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou bliblablou !
-	</div>
-	<span>Back to top</span>
-	<div class="icon"><a href="#presentation" target="_self"><i class="fas fa-arrow-circle-up"></i></a>
+		<div class="job">
+			<h3 class="job_title job_halfwidth">Français</h3
+				><span class="job_halfwidth colored_dots"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i></span>
+				<h3 class="job_title job_halfwidth">Anglais</h3
+					><span class="job_halfwidth colored_dots"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="far fa-circle"></i></span>
+					<h3 class="job_title job_halfwidth">Espagnol</h3
+						><span class="job_halfwidth colored_dots"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i></span>
+						<h3 class="job_title job_halfwidth">Portugais</h3
+							><span class="job_halfwidth colored_dots"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="fas fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i></span>
+							<h3 class="job_title job_halfwidth">Italien</h3
+								><span class="job_halfwidth colored_dots"><i class="fas fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i>&nbsp;<i class="far fa-circle"></i></span>
+							</div>
+						</div>
+							<span>Back to top</span>
+							<div class="icon"><a href="#presentation" target="_self"><i class="fas fa-arrow-circle-up"></i></a>
+						
+						</div>
+					</div>
    <!--    <div class="icon"><a href="#experience" target="_self"><i class="fas fa-arrow-circle-down"></i></a>
    </div> -->
 </div>
